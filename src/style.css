@@ -116,8 +116,28 @@ nav {
     box-shadow: 1px 1px 1px grey;
 }
 
-.tile img:hover {
-    
+.image-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(74, 78, 105, 0.6);
+    height: 98%;
+    width: 100%;
+    color: #f2e9e4;
+    opacity: 0;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.image-overlay:hover {
+    opacity: 1;
 }
 
 .tile h4,
