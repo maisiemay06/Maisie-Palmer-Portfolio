@@ -25,6 +25,9 @@ nav {
     font-size: 1.2em;
     margin-top: -30px;
     color: #f2e9e4;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .navigation-links li {
@@ -43,6 +46,14 @@ nav {
     text-decoration: none;
     color: #c9ada7;
     text-transform: uppercase;
+}
+
+.navigation-links a:hover {
+    color: #22223b;
+}
+
+.navigation-links a:active {
+    color: #f2e9e4;
 }
 
 /* Introduction Styles */
@@ -105,10 +116,14 @@ nav {
     box-shadow: 1px 1px 1px grey;
 }
 
+.tile img:hover {
+    
+}
+
 .tile h4,
 .tile h5,
 .date {
-    line-height: 5px;
+    margin: 2px;
     color: #22223b;
 }
 
@@ -120,8 +135,6 @@ nav {
 .date {
     color: #9a8c98;
 }
-
-/* Example Websites Styles */
 
 
 /* Footer Styles */
