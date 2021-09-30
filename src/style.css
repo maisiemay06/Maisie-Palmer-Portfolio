@@ -1,6 +1,7 @@
 /* Universal Styles */
-* {
+body {
     font-family: 'Raleway', sans-serif;
+    background-color: #f2e9e4;
 }
 
 /* Navigation Styles */
@@ -12,6 +13,8 @@ nav {
     margin-top: -150px;
     background-color: #4a4e69;
     box-shadow: 0px 3px 3px #22223b;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .main-title {
@@ -19,6 +22,7 @@ nav {
     line-height: 0.75em;
     text-transform: uppercase;
     color: #f2e9e4;
+    
 }
 
 .subtitle {
@@ -95,7 +99,7 @@ nav {
     max-width: 1300px;
     padding: 10px;
     box-shadow: 2px 3px 3px grey;
-    background-color: #f2e9e4;
+    background-color: #eadbd3;
 }
 
 .card h2 {
@@ -127,8 +131,8 @@ nav {
     align-items: center;
     top: 0;
     left: 0;
-    background-color: rgba(74, 78, 105, 0.6);
-    height: 98%;
+    background-color: rgba(34, 34, 59, 0.6);
+    height: 99%;
     width: 100%;
     color: #f2e9e4;
     opacity: 0;
@@ -158,3 +162,29 @@ nav {
 
 
 /* Footer Styles */
+footer {
+    background-color: #4a4e69;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px -3px 3px #22223b;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.icons {
+    width: 300px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.icons img {
+    height: auto;
+    width: 10%;
+    max-width: 30px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
