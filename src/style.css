@@ -1,0 +1,63 @@
+/* Universal Styles */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    margin-top: -200px;
+    background-color: #4a4e69;
+    box-shadow: 0px 3px 3px grey;
+}
+
+.main-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #c9ada7;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-top: -20px;
+    color: #c9ada7;
+}
+
+.navigation-links li {
+    display: inline;
+    list-style: none;
+    font-size: 0.75em;
+}
+
+.navigation-links li+li::before {
+    content: '- ';
+    padding: 2rem;
+    color: #f2e9e4;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #f2e9e4;
+    text-transform: uppercase;
+}
+/* Introduction Styles */
+.main-body {
+    margin-top: 200px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: auto;
+    width: 30%;
+}
+
+/* Certificate Styles */
+
+/* Example Websites Styles */
+
+
+/* Footer Styles */
