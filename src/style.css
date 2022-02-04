@@ -1,9 +1,14 @@
 /* Universal Styles */
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f2e9e4;
-    width: 95%;
+    background-color: #f1faee;
+    width: 100%;
     margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden!important;
 }
 
 /* Navigation Styles */
@@ -13,8 +18,8 @@ nav {
     height: 130px;
     position: fixed;
     margin-left: 0px;
-    margin-top: -150px;
-    background-color: #4a4e69;
+    margin-top: -8px;
+    background-color: #1d3557;
     box-shadow: 0px 3px 3px #22223b;
     z-index: 1;
     overflow: hidden!important;
@@ -24,14 +29,14 @@ nav {
     font-size: 2.5em;
     line-height: 0.75em;
     text-transform: uppercase;
-    color: #f2e9e4;
+    color: #f1faee;
     
 }
 
 .subtitle {
     font-size: 1.2em;
     margin-top: -30px;
-    color: #f2e9e4;
+    color: #f1faee;
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -46,21 +51,21 @@ nav {
 .navigation-links li+li::before {
     content: '- ';
     padding: 2rem;
-    color: #c9ada7;
+    color: #a8dadc;
 }
 
 .navigation-links a {
     text-decoration: none;
-    color: #c9ada7;
+    color: #a8dadc;
     text-transform: uppercase;
 }
 
 .navigation-links a:hover {
-    color: #22223b;
+    color: #e63946;
 }
 
 .navigation-links a:active {
-    color: #f2e9e4;
+    color: #f1faee;
 }
 
 /* Introduction Styles */
@@ -92,13 +97,6 @@ nav {
     text-align: justify;
 }
 
-
-
-.personal-statement h2 {
-    text-transform: uppercase;
-    color: #22223b;
-}
-
 /* Card Styles */
 .card {
     border-radius: 10px;
@@ -107,11 +105,11 @@ nav {
     max-width: 1300px;
     padding: 10px;
     box-shadow: 2px 3px 3px grey;
-    background-color: #eadbd3;
+    background-color: #a8dadc;
 }
 
 .card h2 {
-    color: #22223b;
+    color: #1d3557;
     line-height: 10px;
     text-transform: uppercase;
 }
@@ -142,7 +140,7 @@ nav {
     background-color: rgba(34, 34, 59, 0.6);
     height: 99%;
     width: 100%;
-    color: #f2e9e4;
+    color: #f1faee;
     opacity: 0;
     transition: 0.3s ease;
     letter-spacing: 1px;
@@ -152,26 +150,30 @@ nav {
     opacity: 1;
 }
 
+.image-overlay h3:hover {
+    color: #e63946;
+}
+
 .tile h4,
 .tile h5,
 .date {
     margin: 2px;
-    color: #22223b;
+    color: #1d3557;
 }
 
 .tile h5 {
     font-style: italic;
-    color: #4a4e69;
+    color: #457b9d;
 }
 
 .date {
-    color: #9a8c98;
+    color: #457b9d;
 }
 
 
 /* Footer Styles */
 footer {
-    background-color: #4a4e69;
+    background-color: #1d3557;
     width: 100%;
     padding: 20px;
     overflow: hidden!important;
@@ -207,9 +209,15 @@ footer a {
 @media only screen and (min-width: 1000px) {
     .personal-statement {
         height: 300px;
-
     }
+}
 
+@media only screen and (max-width: 765px) {
+    .caption h4{
+        max-height: 40px;
+        min-height: 35px;
+        line-height: 15px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,12 +229,23 @@ footer a {
         width: 100%;
         margin: 20px auto;
     }
+    .navigation-links li+li::before {
+        padding: 0;
+    }
 }
 
-@media only screen and (max-width: 765px) {
-    .caption h4{
-        max-height: 40px;
-        min-height: 35px;
-        line-height: 15px;
+@media only screen and (max-width: 450px) {
+    nav {
+        height: 160px;
+    }
+    .navigation-links li {
+        display: block;
+        margin: 0;
+    }
+    .navigation-links li+li::before {
+        display: none;
+    }
+    .personal-statement {
+        max-width: 100%;
     }
 }
