@@ -12,12 +12,12 @@
     <title>Maisie Palmer Portfolio</title>
   </head>
   <body class="w-screen overflow-x-hidden font-body bg-mp-cream">
-    <nav class="bg-mp-navy text-mp-mauve fixed inset-0 bottom-unset text-center w-full h-[130px] shadow-md z-10 py-5">
+    <nav class="bg-mp-navy text-mp-mauve fixed inset-0 bottom-unset text-center w-full h-[180px] md:h-[130px] shadow-md z-10 py-5">
       <header>
         <h1 class="text-[40px] uppercase leading-[45px] text-mp-lilac tracking-wide">Maisie Palmer</h1>
         <h3 class="text-[20px] uppercase font-thin tracking-widest">Professional Portfolio</h3>
       </header>
-      <ul class="flex mx-auto items-center justify-center uppercase gap-4 text-[12px] mt-1">
+      <ul class="flex flex-wrap mx-auto items-center justify-center uppercase gap-x-4 text-[12px] mt-1">
         <li><a href="#top" class="inline list-none hover:text-mp-purple active:text-mp-plum transition-all duration-200 ease-in-out">Personal Statement</a></li>
         <p>-</p>
         <li><a href="#certifications" class="inline list-none hover:text-mp-purple active:text-mp-plum transition-all duration-200 ease-in-out">Certifications</a></li>
@@ -26,9 +26,10 @@
       </ul>
     </nav>
 
-    <div class="mt-[160px] px-5 max-w-[1000px] mx-auto space-y-20 pb-20">
-      <section class="flex gap-8 w-full">
-        <img src="src/img/mp-profile-img.jpg" alt="Photo of Maisie Palmer" class="shrink-0 rounded-full h-auto w-1/3 max-h-[300px] max-w-[300px] aspect-square shadow-md" />
+    <div class="mt-[200px] md:mt-[160px] px-5 max-w-[1000px] mx-auto flex flex-col gap-8 pb-20">
+      <!-- PERSONAL STATEMENT -->
+      <section class="flex flex-col md:flex-row gap-8 w-full items-center md:items-start">
+        <img src="src/img/mp-profile-img-3.jpeg" alt="Photo of Maisie Palmer" class="shrink-0 rounded-full h-auto md:w-1/3 max-h-[300px] max-w-[300px] aspect-square shadow-md object-cover" />
         <div class="text-mp-navy text-justify">
           <p>
             As a self-taught front-end developer with 19 months of hands-on experience at a dynamic tech startup, I have not only honed my coding skills but also developed a deep passion for creating seamless and user-friendly web applications. My journey into the world of coding has been driven by
@@ -46,10 +47,11 @@
         </div>
       </section>
 
-      <section class="rounded-lg w-full p-3 shadow-md bg-mp-purple" id="example-webs">
+      <!-- PROJECTS & EXAMPLES -->
+      <section class="rounded-lg w-full p-5 shadow-md bg-mp-purple" id="example-webs">
         <h2 class="text-mp-navy text-[20px] uppercase mb-4 text-center mx-auto">Projects & Example Websites</h2>
-        <div class="flex items-center justify-between gap-3 flex-wrap gap-y-6">
-          <div class="flex-1 group min-w-[30%]">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3 flex-wrap gap-y-6">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.meeow.com" target="_blank" title="Click to view">
                 <img src="src/img/meeow-home.png" alt="Screenshot of React Weather App website" class="w-full h-auto shadow-sm aspect-[175/124]" />
@@ -65,7 +67,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.what-maisie-made.co.uk" target="_blank" title="Click to view">
                 <img src="src/img/wmm-preview.png" alt="Screenshot of What Maisie Made website" class="w-full h-auto shadow-sm aspect-[175/124]" />
@@ -81,7 +83,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.cavas-sketch-api.netlify.app/curves" target="_blank" title="Click to view">
                 <img src="src/img/sketch-curves.png" alt="Canvas Sketch - Animated Curves" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
@@ -97,7 +99,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.cavas-sketch-api.netlify.app/skew" target="_blank" title="Click to view">
                 <img src="src/img/sketch-skew.png" alt="Canvas Sketch - Skew by Seed" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
@@ -113,7 +115,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.cavas-sketch-api.netlify.app/particles" target="_blank" title="Click to view">
                 <img src="src/img/sketch-particles.png" alt="Canvas Sketch - Particles" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
@@ -129,7 +131,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://www.cavas-sketch-api.netlify.app/curve-maker" target="_blank" title="Click to view">
                 <img src="src/img/sketch-curve-maker.png" alt="Canvas Sketch - Curve Maker" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
@@ -145,7 +147,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://react-weather-mp.netlify.app" target="_blank" title="Click to view">
                 <img src="src/img/react-weather-img.png" alt="Screenshot of React Weather App website" class="w-full h-auto shadow-sm" />
@@ -161,7 +163,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://dictionary-project-mp.netlify.app/" target="_blank" title="Click to view">
                 <img src="src/img/dictionary-project-img.png" alt="Screenshot of Dictionary Search Engine" class="w-full h-auto shadow-sm" />
@@ -177,7 +179,7 @@
             </div>
           </div>
 
-          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+          <div class="flex-1 group min-w-[30%] md:max-w-[33%]">
             <div class="relative">
               <a href="https://meal-planner-mp.netlify.app/" target="_blank" title="Click to view">
                 <img src="src/img/meal-planner-img.png" alt="Screenshot of Meal Planner website" class="w-full h-auto shadow-sm" />
@@ -195,9 +197,18 @@
         </div>
       </section>
 
-      <section class="rounded-lg w-full p-3 shadow-md bg-mp-purple" id="certifications">
+      <section class="rounded-lg w-full p-5 shadow-md bg-mp-purple" id="certifications">
+        <h2 class="text-mp-navy text-[20px] uppercase mb-4 text-center mx-auto">Apprenticeship</h2>
+        <p class="text-justify">
+          I'm currently in the midst of pursuing a Level 4 Apprenticeship program with The Coders Guild. I've already dedicated 19 months to this and have about 5 months left to complete the apprenticeship. As part of my commitment, I must allocate at least 6 wokring hours per week to learning and
+          developing new skills while working on building a comprehensive written portfolio. One this is completed (estimated completion mid-December) , the apprenticeship requires me to undertake an End Point Assessment (EPA), which is anticipated to take around 7 weeks to complete. This EPA
+          involves working independently on a work based project set by my manager, to be carried out during regular work hours.
+        </p>
+      </section>
+
+      <section class="rounded-lg w-full p-5 shadow-md bg-mp-purple" id="certifications">
         <h2 class="text-mp-navy text-[20px] uppercase mb-4 text-center mx-auto">Certifications</h2>
-        <div class="flex items-center justify-between gap-3">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3">
           <div class="flex-1 group">
             <div class="relative">
               <a href="https://www.shecodes.io/certificates/4796bc2808ba3d7186807b88a69ad203" target="_blank" title="Click to view">

@@ -9,7 +9,7 @@ module.exports = {
         "mp-purple": "#a167a5",
         "mp-plum": "#4a306d",
         "mp-navy": "#0e273c",
-        "mp-cream": "#f3e9dc",
+        "mp-cream": "#fbf7f5",
       },
       fontFamily: {
         body: ["Raleway", "sans-serif"],
