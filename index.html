@@ -1,159 +1,273 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet" />
     <script src="src/app.js"></script>
     <title>Maisie Palmer Portfolio</title>
-</head>
-<body>
-   
-    <nav>
-        <header>
-            <h1 class="main-title">Maisie Palmer</h1>
-            <h3 class="subtitle">Professional Portfolio</h3>
-        </header>
-        <ul class="navigation-links">
-            <li><a href="#top">Personal Statement</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#example-webs">Example Websites</a></li>
-        </ul>
+  </head>
+  <body class="w-screen overflow-x-hidden font-body bg-mp-cream">
+    <nav class="bg-mp-navy text-mp-mauve fixed inset-0 bottom-unset text-center w-full h-[130px] shadow-md z-10 py-5">
+      <header>
+        <h1 class="text-[40px] uppercase leading-[45px] text-mp-lilac tracking-wide">Maisie Palmer</h1>
+        <h3 class="text-[20px] uppercase font-thin tracking-widest">Professional Portfolio</h3>
+      </header>
+      <ul class="flex mx-auto items-center justify-center uppercase gap-4 text-[12px] mt-1">
+        <li><a href="#top" class="inline list-none hover:text-mp-purple active:text-mp-plum transition-all duration-200 ease-in-out">Personal Statement</a></li>
+        <p>-</p>
+        <li><a href="#certifications" class="inline list-none hover:text-mp-purple active:text-mp-plum transition-all duration-200 ease-in-out">Certifications</a></li>
+        <p>-</p>
+        <li><a href="#example-webs" class="inline list-none hover:text-mp-purple active:text-mp-plum transition-all duration-200 ease-in-out">Projects & Example Websites</a></li>
+      </ul>
     </nav>
 
-    <div class="main-body">
-        <section class="intro">
-            <img src="src/img/mp-profile-img.jpg" alt="Image of Maisie Palmer" class="profile-img">
-            <div class="personal-statement">
-                <p>
-                    After almost three years merchandising for a fast fashion supplier, I decided to leave the industry in pursuit of a career that better suits my abilities, aspirations and personal strengths. I began learning to code in my spare time and switched to a full time training course shortly after when I realised that a future in front-end development was an ideal focus for me. I am now looking for the opportunity to join a cohesive team that I can bring my own perspective to while being supported in my learning and development. 
-                    <br />
-                    I am hard-working and creative with excellent organisational skills and a dedication to learn and grow. I am calm and collected, aim to lead by example in all situations and am able to work proficiently in both group settings and as an individual. What I lack in industry experience, I make up for in drive and ambition to develop my skills, and become part of a successful developer team.
-                </p>
-            </div>
-        </section>
+    <div class="mt-[160px] px-5 max-w-[1000px] mx-auto space-y-20 pb-20">
+      <section class="flex gap-8 w-full">
+        <img src="src/img/mp-profile-img.jpg" alt="Photo of Maisie Palmer" class="shrink-0 rounded-full h-auto w-1/3 max-h-[300px] max-w-[300px] aspect-square shadow-md" />
+        <div class="text-mp-navy text-justify">
+          <p>
+            As a self-taught front-end developer with 19 months of hands-on experience at a dynamic tech startup, I have not only honed my coding skills but also developed a deep passion for creating seamless and user-friendly web applications. My journey into the world of coding has been driven by
+            self-motivation and a relentless desire to learn and innovate.
+            <br />
+            My expertise extends to Vue.js, Nuxt.js, and TailwindCSS, which I have mastered independently through dedication and continuous self-improvement. I believe that the ability to self-learn and adapt in the fast-paced tech industry is a valuable asset, and I am committed to keeping up with
+            the ever-evolving web development landscape.
+            <br />
+            Currently, I am 18 months into a comprehensive 2-year Level 4 Software Developer Apprenticeship with The Coders Guild (more information available below), a program that has not only reinforced my skills but also provided me with a strong foundation in software development principles
+            beyond just those I encounter daily in my current role. I am excited to continue working towards completing this apprenticeship to further enhance my knowledge and capabilities in the field.
+            <br />
+            In my next professional endeavor, I am eager to find a role that allows me to build upon my apprenticeship and continue my growth as a front-end developer. My ideal job would involve working with Vue.js, as it aligns perfectly with my current skill set and passion. I am dedicated to
+            contributing to a dynamic team, driving innovation, and ensuring exceptional user experiences through cutting-edge web applications. I am excited to join a forward-thinking company where I can continue to learn and grow, while making a valuable contribution to the company.
+          </p>
+        </div>
+      </section>
 
-        <section class="card" id="certifications">
-            <h2>Certifications</h2>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://www.shecodes.io/certificates/4796bc2808ba3d7186807b88a69ad203" target="_blank" title="Click to view">
-                        <img src="src/img/react-dev-cert.png" alt="SheCodes Certificate">
-                        <div class="image-overlay">
-                            <h3>Open Certificate</h3>
-                        </div>
-                    </a>
+      <section class="rounded-lg w-full p-3 shadow-md bg-mp-purple" id="example-webs">
+        <h2 class="text-mp-navy text-[20px] uppercase mb-4 text-center mx-auto">Projects & Example Websites</h2>
+        <div class="flex items-center justify-between gap-3 flex-wrap gap-y-6">
+          <div class="flex-1 group min-w-[30%]">
+            <div class="relative">
+              <a href="https://www.meeow.com" target="_blank" title="Click to view">
+                <img src="src/img/meeow-home.png" alt="Screenshot of React Weather App website" class="w-full h-auto shadow-sm aspect-[175/124]" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
                 </div>
-                <div class="caption">
-                    <h4>React Development</h4>
-                    <h5>SheCodes</h5>
-                    <p class="date">May 17, 2021</p>
-                </div>
+              </a>
             </div>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://www.shecodes.io/certificates/b5fd19339ab47726e853c0e0ff9b1f23" target="_blank" title="Click to view">
-                        <img src="src/img/front-end-dev-cert.png" alt="SheCodes Certificate">
-                        <div class="image-overlay">
-                            <h3>Open Certificate</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="caption">
-                    <h4>Front End Development</h4>
-                    <h5>SheCodes</h5>
-                    <p class="date">Jan 11, 2021</p>
-                </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Meeow Online Networking</p>
+              <p class="italic text-mp-plum">Vue, Nuxt, Tailwind, API, MySQL</p>
+              <p class="text-mp-plum">April, 2022 - Present</p>
             </div>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://www.shecodes.io/certificates/7eb87c854a9936f234a17847a87f784f" target="_blank" title="Click to view">
-                        <img src="src/img/intro-to-coding-cert.png" alt="SheCodes Certificate">
-                        <div class="image-overlay">
-                            <h3>Open Certificate</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="caption">
-                    <h4>Introduction to Coding</h4>
-                    <h5>SheCodes</h5>
-                    <p class="date">Oct 19, 2020</p>
-                </div>
-            </div>
-        </section>
+          </div>
 
-        <section class="card" id="example-webs">
-            <h2>Example Websites</h2>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://react-weather-mp.netlify.app" target="_blank" title="Click to view">
-                        <img src="src/img/react-weather-img.PNG" alt="Weather App Preview">
-                        <div class="image-overlay">
-                            <h3>Open Website</h3>
-                        </div>
-                    </a>
+          <div class="flex-1 group min-w-[30%]">
+            <div class="relative">
+              <a href="https://www.what-maisie-made.co.uk" target="_blank" title="Click to view">
+                <img src="src/img/wmm-preview.png" alt="Screenshot of What Maisie Made website" class="w-full h-auto shadow-sm aspect-[175/124]" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
                 </div>
-                <div class="caption">
-                    <h4>React Weather Forecast</h4>
-                    <h5>React, APIs, Bootstap</h5>
-                    <p class="date">May, 2021</p>
-                </div>
+              </a>
             </div>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://dictionary-project-mp.netlify.app/" target="_blank" title="Click to view">
-                        <img src="src/img/dictionary-project-img.png" alt="Website Preview">
-                        <div class="image-overlay">
-                            <h3>Open Website</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="caption">
-                    <h4>Dictionary Search Engine</h4>
-                    <h5>React, APIs, JS, Grids</h5>
-                    <p class="date">Jan, 2022</p>
-                </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>What Maisie Made</p>
+              <p class="italic text-mp-plum">Vue, Nuxt, Tailwind, Snipcart, Contentful</p>
+              <p class="text-mp-plum">June, 2022 - Present</p>
             </div>
-            <div class="tile">
-                <div class="image-container">
-                    <a href="https://meal-planner-mp.netlify.app/" target="_blank" title="Click to view">
-                        <img src="src/img/meal-planner-img.png" alt="Website Preview">
-                        <div class="image-overlay">
-                            <h3>Open Website</h3>
-                        </div>
-                    </a>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://www.cavas-sketch-api.netlify.app/curves" target="_blank" title="Click to view">
+                <img src="src/img/sketch-curves.png" alt="Canvas Sketch - Animated Curves" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
                 </div>
-                <div class="caption">
-                    <h4>Meal Planner</h4>
-                    <h5>Bootstrap, Grids, Media Queries</h5>
-                    <p class="date">Feb, 2022</p>
-                </div>
+              </a>
             </div>
-        </section>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Creative Coding - Animated Curves</p>
+              <p class="italic text-mp-plum">Canvas Sketch, JS</p>
+              <p class="text-mp-plum">Jan, 2023 - Present</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://www.cavas-sketch-api.netlify.app/skew" target="_blank" title="Click to view">
+                <img src="src/img/sketch-skew.png" alt="Canvas Sketch - Skew by Seed" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Creative Coding - Skew by Seed</p>
+              <p class="italic text-mp-plum">Canvas Sketch, JS, Riso Colors</p>
+              <p class="text-mp-plum">Dec, 2023 - Present</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://www.cavas-sketch-api.netlify.app/particles" target="_blank" title="Click to view">
+                <img src="src/img/sketch-particles.png" alt="Canvas Sketch - Particles" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Creative Coding - Particles</p>
+              <p class="italic text-mp-plum">Canvas Sketch, JS, ColorMap</p>
+              <p class="text-mp-plum">Jan, 2023 - Present</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://www.cavas-sketch-api.netlify.app/curve-maker" target="_blank" title="Click to view">
+                <img src="src/img/sketch-curve-maker.png" alt="Canvas Sketch - Curve Maker" class="w-full h-auto shadow-sm aspect-[175/124] object-cover object-center" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Creative Coding - Curve Maker</p>
+              <p class="italic text-mp-plum">Canvas Sketch, JS</p>
+              <p class="text-mp-plum">Jan, 2023 - Present</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://react-weather-mp.netlify.app" target="_blank" title="Click to view">
+                <img src="src/img/react-weather-img.png" alt="Screenshot of React Weather App website" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>React Weather Forecast</p>
+              <p class="italic text-mp-plum">React, API, Bootstap</p>
+              <p class="text-mp-plum">May, 2021</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://dictionary-project-mp.netlify.app/" target="_blank" title="Click to view">
+                <img src="src/img/dictionary-project-img.png" alt="Screenshot of Dictionary Search Engine" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Dictionary Search Engine</p>
+              <p class="italic text-mp-plum">React, API, JS, CSS</p>
+              <p class="text-mp-plum">Jan, 2022</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group min-w-[30%] max-w-[33%]">
+            <div class="relative">
+              <a href="https://meal-planner-mp.netlify.app/" target="_blank" title="Click to view">
+                <img src="src/img/meal-planner-img.png" alt="Screenshot of Meal Planner website" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Meal Planner</p>
+              <p class="italic text-mp-plum">Bootstap, CSS, Media Queries</p>
+              <p class="text-mp-plum">Feb, 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-lg w-full p-3 shadow-md bg-mp-purple" id="certifications">
+        <h2 class="text-mp-navy text-[20px] uppercase mb-4 text-center mx-auto">Certifications</h2>
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex-1 group">
+            <div class="relative">
+              <a href="https://www.shecodes.io/certificates/4796bc2808ba3d7186807b88a69ad203" target="_blank" title="Click to view">
+                <img src="src/img/react-dev-cert.png" alt="SheCodes Certificate" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Certificate</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>React Development</p>
+              <p class="italic text-mp-plum">SheCodes</p>
+              <p class="text-mp-plum">May 17, 2021</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group">
+            <div class="relative">
+              <a href="https://www.shecodes.io/certificates/b5fd19339ab47726e853c0e0ff9b1f23" target="_blank" title="Click to view">
+                <img src="src/img/front-end-dev-cert.png" alt="SheCodes Certificate" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Certificate</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Front End Development</p>
+              <p class="italic text-mp-plum">SheCodes</p>
+              <p class="text-mp-plum">Jan 11, 2021</p>
+            </div>
+          </div>
+
+          <div class="flex-1 group">
+            <div class="relative">
+              <a href="https://www.shecodes.io/certificates/7eb87c854a9936f234a17847a87f784f" target="_blank" title="Click to view">
+                <img src="src/img/intro-to-coding-cert.png" alt="SheCodes Certificate" class="w-full h-auto shadow-sm" />
+                <div class="absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-mp-cream uppercase text-[25px] opacity-0 group-hover:opacity-100 transition-all duration-200">
+                  <p>Open Certificate</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col text-mp-navy mt-2">
+              <p>Introduction to Coding</p>
+              <p class="italic text-mp-plum">SheCodes</p>
+              <p class="text-mp-plum">Oct 19, 2020</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
-    <footer>
-            <ul class="icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/maisie-palmer-0611/" target="_blank" title="LinkedIn">
-                        <img src="src/img/linkedin-logo-cream.png" alt="LinkedIn Logo" class="linkedin-logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/maisiemay06" target="_blank" title="GitHub">
-                        <img src="src/img/github-icon-cream.png" alt="GitHub Logo" class="github-logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1zw9FecaZITiSwJOQ40M176j2ckEo7zbB/view?usp=sharing" target="_blank" title="CV Download">
-                        <img src="src/img/cv-icon-cream.png" alt="CV Download" class="cv-download">
-                    </a>
-                </li>
-            </ul>
+
+    <footer class="bg-mp-navy w-full p-5 shadow-lg text-center">
+      <ul class="flex gap-6 items-center justify-center">
+        <li class="h-8 w-8">
+          <a href="https://www.linkedin.com/in/maisie-palmer-0611/" target="_blank" title="LinkedIn">
+            <img src="src/img/linkedin-logo-cream.png" alt="LinkedIn Logo" class="h-full w-full" />
+          </a>
+        </li>
+        <li class="h-8 w-8">
+          <a href="https://github.com/maisiemay06" target="_blank" title="GitHub">
+            <img src="src/img/github-icon-cream.png" alt="GitHub Logo" class="w-full h-full" />
+          </a>
+        </li>
+        <li class="h-8 w-8">
+          <a href="https://drive.google.com/file/d/1zw9FecaZITiSwJOQ40M176j2ckEo7zbB/view?usp=sharing" target="_blank" title="CV Download">
+            <img src="src/img/cv-icon-cream.png" alt="CV Download" class="w-full h-full" />
+          </a>
+        </li>
+      </ul>
+      <p class="text-mp-mauve mt-4">maisie.palmer@outlook.com</p>
     </footer>
-</body>
+  </body>
 </html>
